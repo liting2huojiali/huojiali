@@ -23,7 +23,7 @@ class Login extends Controller
 	{
 		//判断是否是post请求的数据
 		if (request()->isPOST()) {
-			dump(input('post.'));die;
+			dump(input('post.'));
 		}else{
 			return $this->fetch();
 		}
