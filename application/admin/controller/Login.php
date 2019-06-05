@@ -37,7 +37,7 @@ class Login extends Controller
 			}else{
 				session('id',$rew['id']);
 				session('id',$rew['username']);
-				$this->success('登录成功','Index/index');
+				$this->success('登录成功','Index/index.html');
 			}
 		}else{
 			return $this->fetch();
