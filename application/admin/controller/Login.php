@@ -1,7 +1,6 @@
 <?php 
 namespace app\admin\controller;
 use think\Controller;
-use think\Captcha;
 /**
 * 登录
 */
