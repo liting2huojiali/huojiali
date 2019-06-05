@@ -20,7 +20,7 @@ class Login extends Validate
 
 	];
 	protected $scene=[
-		'add'=>['username','password'];
+		'add'=>['username','password'],
 	];
 }
 

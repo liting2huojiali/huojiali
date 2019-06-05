@@ -22,4 +22,10 @@ class MemberUser extends Model
 	{ 
 		return $this->select();
 	}	
+	//查询单个会员
+	public function member_find($data)
+	{
+		// dump($data);die;
+		return $this->where(['username'=>$data['username'],'password'=>$data['password']])->find();
+	}
 }
