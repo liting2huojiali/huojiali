@@ -14,9 +14,9 @@ class Login extends Controller
 		$id=session('id');
 		//判断session有没有id
 		if (!$id) {
-		return $this->fetch('Index/index');
-		}
 			return $this->fetch('Login/login');
+		}
+		return $this->fetch('Index/index');
 	}
 	//登录
 	public function login()
@@ -24,6 +24,8 @@ class Login extends Controller
 		//判断是否是post请求的数据
 		if (request()->isPOST()) {
 			dump(input('post.'));
+			$validate= validate('Login');
+			
 		}else{
 			return $this->fetch();
 		}
